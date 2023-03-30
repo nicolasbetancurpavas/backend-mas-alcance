@@ -15,7 +15,7 @@ export class Server {
         this.app.use(cors())
     }
     wakeServer() {
-        const PORT = process.env.PORT || PORT
+        const PORT = process.env.PORT || 3000
         this.app.listen(PORT, () => {
             console.log(`Server on ${PORT}`)
         })
