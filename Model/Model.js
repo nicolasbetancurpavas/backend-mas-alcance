@@ -16,6 +16,6 @@ const RegisterRequests = new schema({
         type: [],
 
     }
-})
+}, { versionKey: false })
 export const modelRegister = mongoose.model("Register", RegisterRequests)
 
